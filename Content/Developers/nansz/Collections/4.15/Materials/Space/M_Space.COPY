@@ -1,0 +1,68 @@
+Begin Object Class=Material Name="M_Space"
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=MaterialExpressionReflectionVectorWS Name="MaterialExpressionReflectionVectorWS_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSampleParameterCube Name="MaterialExpressionTextureSampleParameterCube_0"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=3.000000
+      MaterialExpressionEditorX=-196
+      MaterialExpressionEditorY=147
+      MaterialExpressionGuid=01FF121C4F680B973B632EB549449839
+      Material=Material'M_Space'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=5C6B68FA4E233F90030259AD9AD47437
+      Material=Material'M_Space'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionTextureSampleParameterCube'M_Space:MaterialExpressionTextureSampleParameterCube_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionConstant'M_Space:MaterialExpressionConstant_0')
+      MaterialExpressionEditorX=-96
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=B14235664C724544DCB40C9A8E21C3F4
+      Material=Material'M_Space'
+   End Object
+   Begin Object Name="MaterialExpressionReflectionVectorWS_0"
+      CustomWorldNormal=(Expression=MaterialExpressionConstant3Vector'M_Space:MaterialExpressionConstant3Vector_0')
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=C27C2BC443BC3FBD4BE637908E3ACF37
+      Material=Material'M_Space'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameterCube_0"
+      ExpressionGUID=17AE53EB4066C72C45C5738498AC6AB4
+      Coordinates=(Expression=MaterialExpressionReflectionVectorWS'M_Space:MaterialExpressionReflectionVectorWS_0')
+      Texture=TextureCube'/Game/Visual/Materials/Space/Space.Space'
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=B2B700874AEC0B9B6F663CA15AFA9AA4
+      Material=Material'M_Space'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionDivide'MaterialExpressionDivide_0')
+   ShadingModel=MSM_Unlit
+   EditorX=48
+   EditorY=-16
+   Expressions(0)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_0'
+   Expressions(1)=MaterialExpressionDivide'MaterialExpressionDivide_0'
+   Expressions(2)=MaterialExpressionConstant'MaterialExpressionConstant_0'
+   Expressions(3)=MaterialExpressionReflectionVectorWS'MaterialExpressionReflectionVectorWS_0'
+   Expressions(4)=MaterialExpressionTextureSampleParameterCube'MaterialExpressionTextureSampleParameterCube_0'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=BD17B21844A1E4B5071D6C881367C8FC
+   ReferencedTextureGuids(0)=DA5949694C68D6738513D0A35690A873
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=464C6DC7488535580E6C079BC19C00B3
+End Object
